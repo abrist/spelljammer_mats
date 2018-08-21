@@ -1021,7 +1021,7 @@ cuttle_command:
     Summary: |
       The Cuttle Command is a spelljamming ship built and used by humans .
     Description: |
-    Designed by the same humans who allied with the illithids to create the Octopus , the Cuttle Command was built using several of the features of the Octopus, but without the direct input of illithid designers. As the name suggests, the Cuttle Command was intended as a command vessel to coordinate human vessels during the first Unhuman_War . The Cuttle Command is a ten-story-tall tower in space. It is even taller than it is wide along its hull. The gravity plane is maintained by the eight large tentacles, four of which mount heavy weapons. These tentacles extend far enough horizontally to change the orientation of the gravity plane, however this results in a ship which is less maneuverable than it could be otherwise. These tentacles can be pulled in close to the ship in an emergency, granting the Cuttle Command a maneuverability class of C, however this is rarely done, since the sudden shift in the gravity plane is disastrous for anything and anyone not strapped down.
+      Designed by the same humans who allied with the illithids to create the Octopus , the Cuttle Command was built using several of the features of the Octopus, but without the direct input of illithid designers. As the name suggests, the Cuttle Command was intended as a command vessel to coordinate human vessels during the first Unhuman_War . The Cuttle Command is a ten-story-tall tower in space. It is even taller than it is wide along its hull. The gravity plane is maintained by the eight large tentacles, four of which mount heavy weapons. These tentacles extend far enough horizontally to change the orientation of the gravity plane, however this results in a ship which is less maneuverable than it could be otherwise. These tentacles can be pulled in close to the ship in an emergency, granting the Cuttle Command a maneuverability class of C, however this is rarely done, since the sudden shift in the gravity plane is disastrous for anything and anyone not strapped down.
       The Cuttle Command was to be the answer to the elven Armada , proof that an organized human community could create great command ships to destroy the humanoid menace. Unfortunately, the human organization proved to be far less cohesive than that of the elves. In the one large battle of the Unhuman War in which Cuttles participated, they appeared on both sides. Turncoat mercenaries seized one ship and turned it against its builders.
     Crew: |
       The Cuttle Command was set up as a command vessel and information centre, with the "brains" hidden within the protective shell. The Cuttle Command could support a full fleet command staff, and included about half its number in heavily-armed raiders and defenders. Historically, Cuttle Commands were well-armed with magic as well, typically carrying about a dozen battle mages. The captain of such a ship was usually also a powerful mage rather than a warrior.
@@ -1109,7 +1109,8 @@ deathglory:
   cost: 139,500 gp
   tonnage: 45 tons
   hull_points: 90
-  crew: 12/45 (total weapons crew: 25)
+  crew: 12/45
+  total weapons crew: 25
   man_days_fresh_air: 5,400
   maneuver_class: d
   landing_land: no
@@ -1119,17 +1120,31 @@ deathglory:
   power_type: gnomish helm
   ships_rating: as per helmsman -1 (due to spell reflector)
   standard_armament:
-  - type:
+  - type: ballista
+    size: medium
+    damage_type:
+    crew: 2
+    quantity: 2
+  - type: catapult
+    size: medium
+    damage_type:
+    crew: 3
+    quantity: 2
+  - type: jettison
+    size: medium
+    damage_type:
+    crew: 3
+    quantity: 1
+  - type: tangle line gun
     size:
     damage_type:
-    crew:
-    quantity:
-
-    2 medium ballistas (crew: 2)
-    2 medium catapults (crew: 3)
-    1 medium jettison (crew: 3)
-    2 tangle line guns (crew: 2)
-    2 water cannons (crew: 2)
+    crew: 2
+    quantity: 2
+  - type: water cannon
+    size:
+    damage_type:
+    crew: 2
+    quantity: 2
   cargo: 22 tons
   keel_length: 80
   beam_length: 55 (outriggers to 85)
@@ -1138,17 +1153,21 @@ deathglory:
   actions:
   text:
     Summary: |
-    The Deathglory is a spelljamming ship built and used by gnomes .
+      The Deathglory is a spelljamming ship built and used by gnomes .
     Description: |
-    The Deathglory, also known as the Dreadnever-class Galley, is a gnomish ship that actually works. These top-heavy ships are ruggedly overbuilt and equipped with the best gnomish weapons and technology. Deathglories are equipped with outrigger weapon spars jutting from their sides to allow for greater fields of fire.
+      The Deathglory, also known as the Dreadnever-class Galley, is a gnomish ship that actually works. These top-heavy ships are ruggedly overbuilt and equipped with the best gnomish weapons and technology. Deathglories are equipped with outrigger weapon spars jutting from their sides to allow for greater fields of fire.
     Crew: |
     The crew sizes given above are for human-sized crew. For gnomes the crew sizes are 18/90 (weapon crew sizes are also increased by 50%). Recent Deathglory successes have greatly bolstered gnome morale, creating gung-ho crews who work together with speed, dedication, and a degree of common sense not normally seen in tinker gnomes. Some gnome captains have hired human wizards to helm their Deathglories. Experienced gnome gunners and spacers known as "trusties" command groups of 4-7 crewmen each. Most Deathglories carry about 60-70 gnomes.
     Ship Uses:
-    Battleship: The armament of these ships announces their war-like purpose to all. Their gear includes spark_darts , glass globes (filled with greek fire, puddings, jellies, or oozes), ballista-fired supersweepers, tangle_line_guns , water_cannons , and spell_reflectors . Heavy metal plating covers the whole ship, many of which have shields to conceal and protect weapons not in use. Deathglories are kept busy escorting gnomish merchant ships through dangerous areas, hunting pirates along important trade routes, and exploring in the_flow in search of new spheres for the gnomes to colonize. These vessels are still rare, but have become the backbone of gnomish navies, guarding the richest, most populous gnome colonies.
+      Battleship: |
+        The armament of these ships announces their war-like purpose to all. Their gear includes spark_darts , glass globes (filled with greek fire, puddings, jellies, or oozes), ballista-fired supersweepers, tangle_line_guns , water_cannons , and spell_reflectors . Heavy metal plating covers the whole ship, many of which have shields to conceal and protect weapons not in use. Deathglories are kept busy escorting gnomish merchant ships through dangerous areas, hunting pirates along important trade routes, and exploring in the_flow in search of new spheres for the gnomes to colonize. These vessels are still rare, but have become the backbone of gnomish navies, guarding the richest, most populous gnome colonies.
     Other Configurations:
-    Ramglory: This trouble-plagued version of the Deathglory mounts an incredible four rams. The lower half of the prow has been strengthened and reinforced to serve as a blunt_ram , while a piercing ram has been mounted above this. The rear of the ship has been given a similar arrangement. The intent is that the spelljammer can use the blunt ram against ships that the gnomes would not wish to get involved in a boarding action, and the piercing ram against ships that they want to board. In practice, it is very difficult to hit a ship with one ram, while avoiding the use of the other (unless the to-hit roll succeeds by more than 6 points determine randomly which ram is actually used). The rear rams are obviously intended to attack ships behind the Ramglory - which in practice rarely happens, partly because enemy ships can readily see the rams, and so tend to avoid following the Ramglory too closely. The Ramglory is not a popular configuration, since the placement of the rams makes it impossible to properly reinforce the hull to stand the stresses of ramming. Any time a Ramglory rams a ship larger than 15 tons it automatically suffers 1d3 randomly determined critical hits.
-    Flow Galley: The Flow Galley uses a typical Deathglory hull that's been topped out, drops the ballistas and one water cannon, and uses a major helm. The resulting craft has MC: C, 28 tons of cargo space, and requires 27 gnomes to handle. Flow Galleys usually tow several cargo_barges (often overloaded with strange and unreliable gnomish gear) to allow for increased range. Flow Galleys so equipped are used for long-range exploration far beyond the known spheres. Relatively few Flow Galleys have been built, and as of yet none have returned to known space . Likely some of the ships have met with bad fates, but the rest are probably simply still exploring, or have just not yet completed the long journey home.
-    Non-Gnome Crew: The Deathglory is the only gnomish-built ship which other races tend to be willing to use. These ships are usually slightly modified to remove the strangest gnome gear (typically the tangle line guns and water cannons are replaced with more conventional weapons), but are otherwise unchanged from the standard Deathglory.
+      Ramglory: |
+        This trouble-plagued version of the Deathglory mounts an incredible four rams. The lower half of the prow has been strengthened and reinforced to serve as a blunt_ram , while a piercing ram has been mounted above this. The rear of the ship has been given a similar arrangement. The intent is that the spelljammer can use the blunt ram against ships that the gnomes would not wish to get involved in a boarding action, and the piercing ram against ships that they want to board. In practice, it is very difficult to hit a ship with one ram, while avoiding the use of the other (unless the to-hit roll succeeds by more than 6 points determine randomly which ram is actually used). The rear rams are obviously intended to attack ships behind the Ramglory - which in practice rarely happens, partly because enemy ships can readily see the rams, and so tend to avoid following the Ramglory too closely. The Ramglory is not a popular configuration, since the placement of the rams makes it impossible to properly reinforce the hull to stand the stresses of ramming. Any time a Ramglory rams a ship larger than 15 tons it automatically suffers 1d3 randomly determined critical hits.
+      Flow Galley: |
+        The Flow Galley uses a typical Deathglory hull that's been topped out, drops the ballistas and one water cannon, and uses a major helm. The resulting craft has MC C, 28 tons of cargo space, and requires 27 gnomes to handle. Flow Galleys usually tow several cargo_barges (often overloaded with strange and unreliable gnomish gear) to allow for increased range. Flow Galleys so equipped are used for long-range exploration far beyond the known spheres. Relatively few Flow Galleys have been built, and as of yet none have returned to known space . Likely some of the ships have met with bad fates, but the rest are probably simply still exploring, or have just not yet completed the long journey home.
+      Non-Gnome Crew: |
+        The Deathglory is the only gnomish-built ship which other races tend to be willing to use. These ships are usually slightly modified to remove the strangest gnome gear (typically the tangle line guns and water cannons are replaced with more conventional weapons), but are otherwise unchanged from the standard Deathglory.
     References:
       Spelljammer reference: SJR1_Lost_Ships
       TSR reference: TSR 9280
