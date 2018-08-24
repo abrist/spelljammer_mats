@@ -353,7 +353,7 @@ batship,_the:
     Ship Uses:
       Raider: |
         The Batship is a menace to shipping, since it raids ceaselessly. Countless ships have been lost or plundered at the claws of the Batship. It is unknown why the helmsman endlessly engages in these raids, but it is likely a byproduct of her insanity.
-    Other Configurations: |
+    Other Configurations:
       Since the Batship is unique, there are no other configurations.
     References:
       Spelljammer reference: SJR2, 9312XXX1401
@@ -595,7 +595,8 @@ cargo_barge:
   saves_as: thick wood
   power_type: none or minor helm (10%)
   ships_rating: as per towing ship or helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 12 tons
   keel_length: 120
   beam_length: 60
@@ -866,7 +867,7 @@ coaster:
     Ship Uses:
       Trader: |
         Most Coasters in space are used as trading vessels. The only advantage that such a ship has over more capable ships designed for spelljamming is the fact that a Coaster can land in the water, and trade with groundling ports without attracting undue attention. In some of the safest areas of space using a Coaster as a trading vessel is actually a viable option; however, most of wildspace is not safe for the ship, and even in those areas that are safe a Caravel would be a better choice.
-    Other Configurations: |
+    Other Configurations:
       None: |
         Modifications to the Coaster are rare, since it is usually more cost-effective to simply purchase a better ship.
     References:
@@ -889,7 +890,8 @@ cog:
   saves_as: thick wood
   power_type: major or minor helm
   ships_rating: as per helmsman -1
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 10 tons
   keel_length: 90
   beam_length: 20
@@ -938,7 +940,7 @@ crystal_ship:
   power_type: major or minor helm, augmented by sunsails
   ships_rating: as per helmsman (+3 if sunsails deployed)
   standard_armament:
-  - type: balista
+  - type: ballista
     size: heavy
     damage_type:
     crew: 4
@@ -1339,7 +1341,8 @@ dolphin_shuttle:
   saves_as: thick wood
   power_type: major or minor or boat helm
   ships_rating: as per helmsmen
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 4 tons
   keel_length: 40
   beam_length: 15
@@ -1814,7 +1817,8 @@ flitter:
   saves_as: ceramic
   power_type: non-magical or boat or minor helm
   ships_rating: 2 or as per helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 1/2 ton
   keel_length: 20
   beam_length: 5
@@ -2548,7 +2552,7 @@ locust:
   ships_rating: 6
   standard_armament:
   - type: ballista
-    size: lgiht
+    size: light
     damage_type:
     crew: 1
     quantity: 1
@@ -3021,7 +3025,8 @@ mosquito:
   saves_as: thin wood
   power_type: major helm, minor helm, or boat helm
   ships_rating: as per helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 3 tons
   keel_length: 100
   beam_length: 15
@@ -3495,7 +3500,8 @@ sidewheeler:
   saves_as: metal
   power_type: gnomish helm
   ships_rating: as per helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 15 tons
   keel_length: 120
   beam_length: 25
@@ -3589,7 +3595,8 @@ skiff:
   saves_as: thin wood
   power_type: non-magical
   ships_rating: 1
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 1/8 ton
   keel_length: 16
   beam_length: 6
@@ -3633,7 +3640,8 @@ smalljammer:
   saves_as: leather
   power_type: major or minor helm
   ships_rating: as per helmsmen
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 12 tons
   keel_length: 60
   beam_length: 70 (wingspan), 25 (hull beam)
@@ -4662,7 +4670,8 @@ uspo:
   saves_as: thick wood
   power_type: minor helm
   ships_rating: as per helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 20 tons
   keel_length: 200
   beam_length: 40 (90 wingspan)
@@ -4703,7 +4712,8 @@ vagabond:
   saves_as: thick wood
   power_type: minor helm
   ships_rating: as per helmsman
-  standard_armament: none
+  standard_armament:
+  - type: none
   cargo: 10 tons
   keel_length: 90
   beam_length: 20
@@ -5066,7 +5076,7 @@ wreckboat:
         The intended use of a Wreckboat is as a lifeboat. The ballista is often set up so that it can be quickly thrown overboard along with its ammunition in case of an emergency. Wreckboats which are only used as lifeboats, and which never (or rarely) see use as a gig, will typically be equipped with either a furnace or a boiler helm, along with enough magical fuel to power the helm for at least a week. This ensures that crew can escape even if no spellcasters are left alive. Wreckboats used in this manner are almost always protected with a Retain Air Envelope spell to keep their air clear of any disasters which may befall the mother ship.
       Gig: |
         Most Wreckboats are primarily used as ship's boats, allowing the mother ship to pick up and drop off crew and passengers on worlds in an inconspicuous manner. Wreckboats are often used as gigs by ships which are unable to land.
-    Other Configurations: |
+    Other Configurations:
       None: |
         No other configurations of this basic ship have become popular.
     References:
